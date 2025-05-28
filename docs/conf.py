@@ -7,8 +7,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Deepixel Vision API'
-copyright = '2025, yapws'
-author = 'yapws'
+copyright = '2025, yapws87'
+author = 'yapws87'
 release = 'v1.0'
 
 # -- General configuration ---------------------------------------------------
@@ -17,7 +17,7 @@ release = 'v1.0'
 extensions = []
 
 templates_path = ['_templates']
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 
 
