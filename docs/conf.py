@@ -2,10 +2,20 @@ import os
 import sys
 import subprocess
 
-# Optional: run Doxygen automatically when building docs
+# Run Doxygen automatically (optional)
 subprocess.call('doxygen', shell=True)
 
 extensions = [
     'breathe',
-    # Add other Sphinx extensions as needed
 ]
+
+project = 'My Project'
+author = 'Your Name'
+release = '1.0'
+
+breathe_projects = {
+    "myproject": "../doxy_files/xml/"
+}
+breathe_default_project = "myproject"
+
+html_theme = 'sphinx_rtd_theme'
